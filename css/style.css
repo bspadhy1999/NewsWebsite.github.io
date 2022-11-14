@@ -1,0 +1,75 @@
+@import url(./variable.css);
+body {
+  background-color: var(--background-color);
+}
+.navbar-section {
+  box-shadow: var(--box-shadow-color);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.app-download {
+  background-color: red;
+  color: aliceblue;
+}
+.app-download img {
+  width: 150px;
+  margin-left: 10px;
+}
+p {
+  font-size: 17px;
+}
+a {
+  text-decoration: none;
+}
+.logo-img {
+  width: 100px;
+  border-radius: 5px;
+  margin-left: 30px;
+  display: flex;
+  justify-content: center;
+}
+.newsbar {
+  box-shadow: var(--box-shadow-color);
+  background-color: var(--container-color);
+  color: var(--text-color);
+}
+.sidebar-section {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+.darkmode #dark {
+  width: 40px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1;
+  cursor: pointer;
+}
+.footer {
+  background-color: var(--footer-color);
+  text-align: center;
+  padding: 15px;
+  box-shadow: var(--box-shadow-color);
+}
+.footer i {
+  font-size: 35px;
+  margin: 10px;
+  color: red;
+}
+.footer p {
+  letter-spacing: 2px;
+  opacity: 0.8;
+  color: var(--text-color);
+}
+.footer h2 {
+  font-size: 25px;
+  letter-spacing: 1px;
+  color: var(--text-color);
+}
+.footer .fa-phone {
+  font-size: 30px;
+}
+li:hover {
+  background-color: var(--li-color);
+}

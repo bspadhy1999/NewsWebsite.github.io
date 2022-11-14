@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inshorts | Home page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <nav id="sidebarOpen" class="navbar navbar-section">
+    <div class="container-fluid ">
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+        aria-controls="offcanvasExample" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a href="index.html">
+        <img class="logo-img"
+          src="data:image/png;base64,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"
+          alt="">
+      </a>
+    </div>
+  </nav>
+  <div class="offcanvas offcanvas-start sidebar-section" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Categories</h5>
+      <button id="sidebarClose" type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <hr>
+    <div class="offcanvas-body p-1">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active ms-2" aria-current="page" href="#" onclick="fnAll()">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active ms-2" aria-current="page" href="#" onclick="fnBusiness()"> Business</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active ms-2" aria-current="page" href="#" onclick="fnEntertainment()">Entertainment</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active ms-2" aria-current="page" href="#" onclick="fnGeneral()">General</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active ms-2" aria-current="page" href="#" onclick="fnHealth()">Health</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active ms-2" aria-current="page" href="#" onclick="fnScience()">Science</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active ms-2" aria-current="page" href="#" onclick="fnSports()">Sports</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active ms-2" aria-current="page" href="#" onclick="fnTechnology()">Technology</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="darkmode">
+    <img id="dark" src="media\moon.png" alt="moon-image" />
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-9 d-flex mx-auto mt-3 p-2 justify-content-evenly align-items-center app-download">
+        <div>
+          <p class="mt-2">For the best experience use Inshorts App on your smartphone </p>
+        </div>
+        <div class="d-flex">
+          <img src="https://b.zmtcdn.com/data/webuikit/9f0c85a5e33adb783fa0aef667075f9e1556003622.png">
+          <img src="https://b.zmtcdn.com/data/webuikit/23e930757c3df49840c482a8638bf5c31556001144.png">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-3">
+    <div class="row" id="rowRef">
+    </div>
+  </div>
+
+  <footer id="contact" class="footer">
+    <div class="content">
+      <h2>Inshorts clone made by - Bhabani Sankar Padhy</h2>
+    </div>
+    <div class="contact-items">
+      <a href="mailto:bspadhy1999@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+      <a href="tel:+7606823010"><i class="fa-solid fa-phone"></i></a>
+      <a href="https://api.whatsapp.com/send?phone=6370023010" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+      <a href="https://www.linkedin.com/in/bhabani-sankar-padhy-3aa1b4146/" target="_blank" class="social-media-icon"><i
+          class="fa-brands fa-linkedin-in"></i></a>
+      <a href="https://github.com/bspadhy1999" target="_blank" class="social-media-icon"><i
+          class="fa-brands fa-github"></i></a>
+    </div>
+    <div class="copyright">
+      <p>Copyright &copy;2022, All rights are reserved</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>

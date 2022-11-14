@@ -1,0 +1,19 @@
+:root {
+    --text-color: black;
+    --background-color: white;
+    --container-color: rgba(255, 255, 255, 0.868);
+    --navbar-color: whitesmoke;
+    --footer-color: whitesmoke;
+    --box-shadow-color: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    --li-color:rgba(0, 0, 0, 0.163);
+  }
+  .darkmode {
+    --text-color: white;
+    --background-color: black;
+    --navbar-color: black;
+    --footer-color: black;
+    --container-color: rgba(255, 228, 196, 0.184);
+    --box-shadow-color: 0px 0px 5px rgb(255, 255, 255);
+    --li-color:rgba(255, 228, 196, 0.184);
+  }
+  
