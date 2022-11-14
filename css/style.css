@@ -3,6 +3,8 @@ body {
   background-color: var(--background-color);
 }
 .navbar-section {
+  background-color: var(--navbar-color);
+  color: var(--text-color);
   box-shadow: var(--box-shadow-color);
   position: sticky;
   top: 0;
