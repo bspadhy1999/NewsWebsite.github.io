@@ -1,4 +1,5 @@
 let rowRef = document.getElementById("rowRef");
+
 fetch("https://saurav.tech/NewsAPI/everything/cnn.json")
   .then(
     function (res) {
@@ -33,6 +34,7 @@ fetch("https://saurav.tech/NewsAPI/everything/cnn.json")
       console.log("Error in iterate data!");
     }
   );
+
 function fnAll() {
   rowRef.innerHTML = "";
   fetch("https://saurav.tech/NewsAPI/everything/cnn.json")
@@ -71,6 +73,7 @@ function fnAll() {
       }
     );
 }
+
 function fnBusiness() {
   rowRef.innerHTML = "";
   fetch("https://saurav.tech/NewsAPI/top-headlines/category/business/in.json")
@@ -348,16 +351,10 @@ function fnTechnology() {
 
 let dark = document.getElementById("dark");
 dark.onclick = function () {
-  let sidebarClose=document.getElementById("sidebarClose");
-  let sidebarOpen=document.getElementById("sidebarOpen");
   document.body.classList.toggle("darkmode");
   if (document.body.classList.contains("darkmode")) {
     dark.src = "media/sun.png";
-    sidebarClose.classList.add("btn-close-white");
-    sidebarOpen.classList.add("navbar-bg-dark");
   } else {
     dark.src = "media/moon.png";
-    sidebarClose.classList.remove("btn-close-white");
-    sidebarOpen.classList.remove(" navbar-bg-dark");
   }
 };

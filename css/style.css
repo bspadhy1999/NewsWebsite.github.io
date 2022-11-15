@@ -6,6 +6,7 @@ body {
   background-color: var(--navbar-color);
   color: var(--text-color);
   box-shadow: var(--box-shadow-color);
+  position: relative;
   position: sticky;
   top: 0;
   z-index: 1;
@@ -27,9 +28,9 @@ a {
 .logo-img {
   width: 100px;
   border-radius: 5px;
-  margin-left: 30px;
-  display: flex;
-  justify-content: center;
+  position: absolute;
+  top: 10%;
+  left: 45%;
 }
 .newsbar {
   box-shadow: var(--box-shadow-color);
@@ -39,6 +40,7 @@ a {
 .sidebar-section {
   background-color: var(--background-color);
   color: var(--text-color);
+  width: 20%;
 }
 .darkmode #dark {
   width: 40px;
@@ -74,4 +76,19 @@ a {
 }
 li:hover {
   background-color: var(--li-color);
+}
+input[type="search"]:focus {
+  border-color: rgba(255, 0, 0, 0.8);
+  box-shadow: 0 1px 1px rgba(218, 204, 204, 0.895) inset, 0 0 8px rgb(255, 0, 0);
+  outline: 0 none;
+}
+.openS {
+  color: var(--text-color);
+  border: 3px solid var(--text-color);
+  background-color: var(--navbar-color);
+  border-radius: 5px;
+  font-size: 20px;
+}
+.openS:hover{
+  box-shadow: var(--box-shadow-color);
 }
